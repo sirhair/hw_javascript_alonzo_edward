@@ -19,3 +19,8 @@ var numba = function(string){
 numba("7");
 numba("seventy");
 numba("university");
+
+function inception(callback,value){
+	callback(value);
+}
+inception(function logit(title){console.log(title + " is fantastic movie.");}, "Finding Nemo");
